@@ -1,0 +1,50 @@
+@use '../../variables' as v;
+
+.intro {
+  position: relative;
+  z-index: 0;
+  background-color: v.$intro-bg;
+  display: flex;
+
+  &__container {
+    height: 532px;
+    position: relative;
+    z-index: 1;
+    width: 1140px;
+    margin: 0 auto;
+  }
+
+  &__text {
+    height: 100%;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 14px;
+  }
+
+  &__title {
+    font-family: v.$font-stack;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 47px;
+    color: v.$font-color-main;
+  }
+
+  &__desc {
+    font-family: v.$font-stack;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: v.$font-color-main;
+  }
+
+  &__image {
+    position: absolute;
+    left: 50%;
+    z-index: 2;
+    height: 532px;
+    width: 50%;
+    background: center / cover url('intro__image.png');
+  }
+}

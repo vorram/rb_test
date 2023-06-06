@@ -1,0 +1,29 @@
+@use '../../variables' as v;
+
+.btn {
+  padding: 11px 24px;
+  background-color: v.$btn-teal;
+  font-family: v.$font-stack;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: v.$btn-teal-light;
+  }
+
+  &_transparent {
+    background-color: transparent;
+    color: v.$btn-teal;
+    border: 1px solid v.$btn-teal;
+  }
+
+  &_transparent:hover {
+    background-color: v.$btn-teal;
+    color: #FFFFFF;
+  }
+}

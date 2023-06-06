@@ -1,0 +1,21 @@
+@use '../../variables' as v;
+
+.phone {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+
+  &__icon {
+    width: 28px;
+    height: 28px;
+    background: center / cover url('phone__icon.svg');
+  }
+
+  &__number {
+    font-family: v.$font-stack;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: v.$font-color-main;
+  }
+}

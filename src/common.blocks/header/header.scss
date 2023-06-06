@@ -1,8 +1,36 @@
+@use '../../variables' as v;
+
 .header {
   &__container {
     width: 1140px;
     margin: 0 auto;
+    padding: 12px 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+  }
+
+  &__left,
+  &__right {
+    display: flex;
+    align-items: center;
+  }
+
+  &__left {
+    gap: 24px;
+  }
+
+  &__right {
+    gap: 35px;
+  }
+
+  &__nav {
+    padding: 10px 0;
+    background-color: v.$nav-bg;
+  }
+
+  &__nav-container {
+    width: 1140px;
+    margin: 0 auto;
   }
 }

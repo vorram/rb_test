@@ -1,0 +1,28 @@
+@use '../../variables' as v;
+
+.address {
+  display: flex;
+  gap: 7px;
+
+  &__icon {
+    width: 13px;
+    height: 19px;
+    background: center / cover url('address__icon.svg');
+  }
+
+  &__city,
+  &__street {
+    font-family: v.$font-stack;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  &__city {
+    color: v.$font-color-main;
+  }
+
+  &__street {
+    color: #868686;
+  }
+}
