@@ -2,4 +2,8 @@
   width: 91px;
   height: 27px;
   background: center / cover url('logo.svg');
+
+  &_white {
+    background: center / cover url('logo_white.svg');
+  }
 }

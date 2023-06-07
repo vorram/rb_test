@@ -19,3 +19,9 @@
     color: v.$font-color-main;
   }
 }
+
+@media (max-width: 720px) {
+  .phone {
+    display: none;
+  }
+}

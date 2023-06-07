@@ -26,3 +26,9 @@
     color: #868686;
   }
 }
+
+@media (max-width: 720px) {
+  .address {
+    display: none;
+  }
+}

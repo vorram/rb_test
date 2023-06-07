@@ -1,8 +1,6 @@
 @use '../../variables' as v;
 
 .intro {
-  position: relative;
-  z-index: 0;
   background-color: v.$intro-bg;
   display: flex;
 
@@ -46,5 +44,29 @@
     height: 532px;
     width: 50%;
     background: center / cover url('intro__image.png');
+  }
+}
+
+@media (max-width: 1200px) {
+  .intro {
+    flex-direction: column;
+
+    &__container {
+      height: auto;
+      width: 100%;
+      order: 2;
+    }
+
+    &__text {
+      margin: 0 auto;
+      padding: 35px 0 53px;
+    }
+
+    &__image {
+      position: static;
+      width: 100%;
+      margin: 0 auto;
+      order: 1;
+    }
   }
 }

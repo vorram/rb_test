@@ -1,0 +1,60 @@
+@use '../../variables' as v;
+
+.footer {
+  background-color: v.$footer-bg;
+
+  &__container {
+    width: 1140px;
+    margin: 0 auto;
+    padding: 54px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__socials {
+    display: flex;
+    gap: 15px;
+  }
+
+  &__socials-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  &__mobile-nav {
+    display: none;
+  }
+
+  &__mobile-nav > a {
+    display: block;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer {
+    &__container {
+      width: auto;
+      padding: 54px 12px;
+    }
+  }
+}
+
+@media (max-width: 860px) {
+  .footer {
+    &__container {
+      padding: 42px 12px 31px;
+    }
+
+    &__nav {
+      display: none;
+    }
+
+    &__mobile-nav {
+      display: block;
+      padding: 0 0 12px 12px;
+    }
+  }
+}
+

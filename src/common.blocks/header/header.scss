@@ -34,3 +34,26 @@
     margin: 0 auto;
   }
 }
+
+@media (max-width: 1200px) {
+  .header {
+    &__container {
+      width: auto;
+      padding: 12px 12px;
+    }
+
+    &__nav-container {
+      width: auto;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .header {
+    &__btn {
+      display: none;
+    }
+  }
+}
