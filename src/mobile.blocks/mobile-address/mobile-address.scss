@@ -1,3 +1,25 @@
+@use '../../variables' as v;
+
 .mobile-address {
   display: none;
+}
+
+@media (max-width: 720px) {
+  .mobile-address {
+    display: block;
+    font-family: v.$font-stack;
+    text-align: right;
+
+    &__phone {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 21px;
+    }
+
+    &__city {
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 17px;
+    }
+  }
 }

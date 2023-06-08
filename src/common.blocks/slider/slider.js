@@ -12,16 +12,19 @@ let currentSlide = 1;
 const navigatePrev = () => {
   if (currentSlide > 1) {
     currentSlide--;
+    const currentSlideElement = document.querySelector(`#slide-${currentSlide}`);
     currentSlideDisplay.textContent = currentSlide;
-    window.location.href = `#slide-${currentSlide}`;
+    currentSlideElement.scrollIntoView({ block: "nearest" });
+    currentSlideDisplay.textContent = currentSlide;
   }
 };
 
 const navigateNext = () => {
   if (currentSlide < totalSlides) {
     currentSlide++;
+    const currentSlideElement = document.querySelector(`#slide-${currentSlide}`);
     currentSlideDisplay.textContent = currentSlide;
-    window.location.href = `#slide-${currentSlide}`;
+    currentSlideElement.scrollIntoView({ block: "nearest" });
   }
 };
 

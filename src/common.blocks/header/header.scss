@@ -1,6 +1,8 @@
 @use '../../variables' as v;
 
 .header {
+  background-color: #FFFFFF;
+
   &__container {
     width: 1140px;
     margin: 0 auto;
@@ -52,7 +54,23 @@
 
 @media (max-width: 720px) {
   .header {
+    position: sticky;
+    z-index: 4;
+    top: 0;
+
+    &__container {
+      padding: 14px 17px;
+    }
+
+    &__left {
+      gap: 43px;
+    }
+
     &__btn {
+      display: none;
+    }
+
+    &__nav {
       display: none;
     }
   }

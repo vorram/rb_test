@@ -58,6 +58,7 @@
     }
 
     &__text {
+      width: 450px;
       margin: 0 auto;
       padding: 35px 0 53px;
     }
@@ -67,6 +68,28 @@
       width: 100%;
       margin: 0 auto;
       order: 1;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .intro {
+    &__text {
+      width: 340px;
+    }
+
+    &__title {
+      font-size: 26px;
+      line-height: 34px;
+    }
+  
+    &__desc {
+      font-size: 14px;
+      line-height: 21px;
+    }
+
+    &__image {
+      height: 288px;
     }
   }
 }

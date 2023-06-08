@@ -1,0 +1,14 @@
+.bg-filter {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #c6c6c681;
+  backdrop-filter: blur(2px);
+
+  &_active {
+    display:block;
+  }
+}

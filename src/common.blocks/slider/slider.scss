@@ -28,7 +28,7 @@
   }
 
   &__text {
-    width: 430px;
+    width: 485px;
     padding: 53px 0 0 63px;
   }
 
@@ -49,9 +49,8 @@
   }
 
   &__list {
-    margin-top: 16px;
+    margin: 16px 0 0 20px;
     list-style-type: disc;
-    list-style-position: inside;
   }
 
   &__list-item {
@@ -65,7 +64,7 @@
 
   &__list-item > span {
     position: relative;
-    right: 11px;
+    right: 3px;
   }
 
   &__list-item::marker {
@@ -191,9 +190,76 @@
     }
 
     &__image {
-      width: 100%;
+      width: 450px;
       height: 169px;
       border-radius: 5px 5px 0 0;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .slider {
+    &__container {
+      margin: 49px 0 41px;
+      gap: calc((100vw - 340px) / 2);
+    }
+
+    &__main {
+      width: 340px;
+    }
+
+    &__main:first-child {
+      margin-left: calc((100vw - 340px) / 2);
+    }
+  
+    &__main:last-child {
+      margin-right: calc((100vw - 340px) / 2);
+    }
+
+    &__title {
+      font-size: 26px;
+      line-height: 34px;
+    }
+  
+    &__subtitle {
+      margin-top: 5px;
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    &__list {
+      margin-top: 12px;
+    }
+
+    &__list-item {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  
+    &__price {
+      margin-top: 17px;
+      font-size: 18px;
+      line-height: 23px;
+    }
+  
+    &__old-price {
+      margin-left: 10px;
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    &__image {
+      width: 340px;
+    }
+
+    &__button-container {
+      gap: 6px;
+    }
+
+    &__btn {
+      padding: 11px 29px;
+      font-size: 14px;
+      line-height: 21px;
     }
   }
 }

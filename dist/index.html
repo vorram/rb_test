@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Клиника</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
@@ -18,17 +19,14 @@
           <span></span>
           <span></span>
         </button>
-        <div class="logo"></div>
+        <div class="logo logo_desktop"></div>
+        <div class="logo logo_mobile"></div>
         <div class="address">
           <div class="address__icon"></div>
           <div class="address__text">
             <div class="address__city">Ростов-на-Дону</div>
             <div class="address__street">ул. Ленина, 2Б</div>
           </div>
-        </div>
-        <div class="mobile-address">
-          <div class="mobile-address__phone">+7(863) 000 00 00</div>
-          <div class="mobile-address__city">Ростов-на-Дону</div>
         </div>
       </div>
       <div class="header__right">
@@ -37,6 +35,10 @@
           <div class="phone__number">+7(863) 000 00 00</div>
         </div>
         <button class="btn header__btn">Записаться на прием</button>
+        <div class="mobile-address">
+          <div class="mobile-address__phone">+7(863) 000 00 00</div>
+          <div class="mobile-address__city">Ростов-на-Дону</div>
+        </div>
       </div>
     </div>
     <nav class="nav header__nav">
@@ -48,6 +50,16 @@
         <a href="#" class="nav__link">Контакты</a>
       </div>
     </nav>
+    <div class="mobile-menu">
+      <div class="mobile-menu__container">
+        <a href="#" class="mobile-menu__link">О клинике</a>
+        <a href="#" class="mobile-menu__link">Услуги</a>
+        <a href="#" class="mobile-menu__link">Специалисты</a>
+        <a href="#" class="mobile-menu__link">Цены</a>
+        <a href="#" class="mobile-menu__link">Контакты</a>
+        <button class="mobile-menu__btn">Записаться на прием</button>
+      </div>
+    </div>
   </header>
   <div class="intro">
     <div class="intro__container">
@@ -193,6 +205,48 @@
       <a href="#" class="nav__link">Контакты</a>
     </div>
   </footer>
+  <div class="bg-filter"></div>
+  <form class="appointment-form">
+    <div class="appointment-form__container">
+      <button class="appointment-form__close-btn">✖</button>
+      <div class="appointment-form__title">Запись на прием</div>
+      <label class="appointment-form__label">
+        <span>ФИО</span>
+        <input name="name" type="text" class="appointment-form__input">
+      </label>
+      <label class="appointment-form__label">
+        <span>Телефон</span>
+        <input name="phone" type="tel" class="appointment-form__input">
+      </label>
+      <label class="appointment-form__select-label">
+        <span>Врач</span>
+        <select name="doctor" class="appointment-form__doctor">
+          <option value="Ivanov">Иванов И.И.</option>
+          <option value="Petrov">Петров П.П.</option>
+          <option value="Aleksandrov">Александров А.А.</option>
+        </select>
+      </label>
+      <label class="appointment-form__select-label">
+        <span>Дата приема</span>
+        <input name="date" type="date" class="appointment-form__date"></label>
+      <label class="appointment-form__select-label">
+        <span>Время приема</span>
+        <select name="time" class="appointment-form__time">
+          <option value="10:00">10:00</option>
+          <option value="11:00">11:00</option>
+          <option value="12:00">12:00</option>
+          <option value="13:00">13:00</option>
+          <option value="14:00">14:00</option>
+          <option value="15:00">15:00</option>
+        </select>
+      </label>
+      <button class="btn appointment-form__submit-btn">Записаться</button>
+    </div>
+    <div class="appointment-form__message">
+      <div class="appointment-form__message-text">Запись подтверждена</div>
+      <button class="btn appointment-form__message-btn">OK</button>
+    </div>
+  </form>
 </body>
 
 </html>
